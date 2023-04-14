@@ -5,7 +5,7 @@ public class Main {
         Class.forName("com.mysql.cj.jdbc.Driver");
         String databaseUrl = "jdbc:mysql://localhost/mydatabase";
 
-        Connection conn = DriverManager.getConnection(databaseUrl,"root","");
+        Connection conn = DriverManager.getConnection(databaseUrl,"root","Sweetcare1#");
         System.out.println("database connection success");
 
         Statement stm = conn.createStatement();
