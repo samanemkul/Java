@@ -19,5 +19,14 @@ public class Main {
         rs.close();
         stm.close();
         conn.close();
+
+        //prepared statement
+        PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM new_table WHERE id =?");
+        preparedStatement.setInt(1,1);
+       ResultSet rs1 = preparedStatement.executeQuery();
+       while (rs1.next()){
+           String name = rs1.getString("name");
+           System.out.println(name);
+       }
+        }
     }
-}
