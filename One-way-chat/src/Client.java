@@ -14,7 +14,7 @@ public class Client {
             Scanner scanner = new Scanner(System.in);
             while(true){
                 int c = inputStreamReader.read();
-                while (c!= -1){
+                while (c!= 0){
                     System.out.print((char) c);
                     c = inputStreamReader.read();
                 }
